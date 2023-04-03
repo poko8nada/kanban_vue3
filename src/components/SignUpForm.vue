@@ -11,11 +11,11 @@ const email = ref('')
 const password = ref('')
 
 const onSubmit = async () => {
-  await userAuthStore.logIn(email.value, password.value)
+  await userAuthStore.SignUp(email.value, password.value)
   .then(()=>{
     if(userAuthStore.isLoggedIn){
-      // console.log(userAuthStore.isLoggedIn);
-      // console.log(userAuthStore.uid);
+      console.log(userAuthStore.isLoggedIn);
+      console.log(userAuthStore.uid);
       router.push('/dashboard')
     }
   })
@@ -86,5 +86,6 @@ button{
   padding: 0;
   color: red;
   margin-top: .3em;
+  padding: 0 16px;
 }
 </style>

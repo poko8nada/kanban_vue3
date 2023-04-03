@@ -1,14 +1,14 @@
 <script setup>
-import LogIn from '@/components/LogInForm.vue'
+import SignupForm from '../components/SignUpForm.vue'
 </script>
 
 <template>
   <main>
     <div class="container">
       <div>
-        <h1>Kanban APP login</h1>
+        <h1>Kanban APP signup</h1>
       </div>
-      <LogIn></LogIn>
+      <SignupForm></SignupForm>
     </div>
   </main>
 </template>
